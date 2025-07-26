@@ -17,6 +17,7 @@ import {
   Person,
   NotificationsNone,
   SearchOutlined,
+  Home,
 } from "@mui/icons-material"
 
 export default function AdminLayout({ children }) {
@@ -120,8 +121,16 @@ export default function AdminLayout({ children }) {
               )
             })}
 
-            {/* Logout Button */}
-            <div className="pt-4 border-t border-gray-100 mt-4">
+            {/* Back to Home and Logout Buttons */}
+            <div className="pt-4 border-t border-gray-100 mt-4 space-y-1">
+              <Link
+                href="/"
+                onClick={() => setSidebarOpen(false)}
+                className="w-full group flex items-center space-x-3 px-3 py-2.5 text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200"
+              >
+                <Home className="text-lg" />
+                <span className="font-medium text-sm">Back to Home</span>
+              </Link>
               <button
                 onClick={handleLogout}
                 className="w-full group flex items-center space-x-3 px-3 py-2.5 text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200"
