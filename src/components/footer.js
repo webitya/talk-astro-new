@@ -137,7 +137,7 @@ export default function Footer() {
             {/* Admin Login Button */}
             <div className="mt-4 md:mt-0">
               <Link
-                href="/signin"
+                href="/Signin"
                 className="inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-orange-50 text-gray-700 hover:text-orange-600 rounded-lg transition-all duration-200 text-sm font-medium border border-gray-200 hover:border-orange-200"
               >
                 <AdminPanelSettings className="h-4 w-4 mr-2" />
